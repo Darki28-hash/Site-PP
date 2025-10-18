@@ -1,0 +1,166 @@
+# Кейсы
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Компании - Кейсы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ЛОГОТИП</a>
+            <nav class="nav">
+                <a href="services.html">Услуги</a>
+                <a href="cases.html">Кейсы</a>
+                <a href="about.html">О компании</a>
+            </nav>
+            <a href="#contact" class="btn">Обсудить проект</a>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+    <main>
+        <!-- Герой-блок для страницы Кейсы -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Наши кейсы</h1>
+                <p>Реальные проекты, которые принесли результат нашим клиентам</p>
+            </div>
+        </section>
+
+        <!-- Фильтры -->
+        <section class="cases-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все проекты</button>
+                    <button class="filter-btn" data-filter="web">Веб-разработка</button>
+                    <button class="filter-btn" data-filter="mobile">Мобильные приложения</button>
+                    <button class="filter-btn" data-filter="design">Дизайн</button>
+                    <button class="filter-btn" data-filter="saas">SaaS</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Сетка кейсов -->
+        <section class="cases-grid-full">
+            <div class="container">
+                <!-- Кейс 1 -->
+                <div class="case-item" data-category="web saas">
+                    <div class="case-image">
+                        <div class="image-placeholder">[Изображение проекта 1]</div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-tags">
+                            <span class="case-tag">Веб-приложение</span>
+                            <span class="case-tag">SaaS</span>
+                            <span class="case-tag">FinTech</span>
+                        </div>
+                        <h3>Корпоративная платформа для управления финансами</h3>
+                        <p>Разработали комплексное решение для автоматизации финансовых процессов крупной ритейл-сети. Система обрабатывает 50,000+ операций ежедневно.</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <strong>+40%</strong>
+                                <span>эффективности процессов</span>
+                            </div>
+                            <div class="result-item">
+                                <strong>-60%</strong>
+                                <span>время обработки операций</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">Подробнее о проекте →</a>
+                    </div>
+                </div>
+
+                <!-- Кейс 2 -->
+                <div class="case-item" data-category="mobile design">
+                    <div class="case-image">
+                        <div class="image-placeholder">[Изображение проекта 2]</div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-tags">
+                            <span class="case-tag">Мобильное приложение</span>
+                            <span class="case-tag">UI/UX Дизайн</span>
+                            <span class="case-tag">E-commerce</span>
+                        </div>
+                        <h3>Мобильное приложение для онлайн-бутика одежды</h3>
+                        <p>Создали приложение с нуля: от исследования пользователей до запуска в App Store и Google Play. Уникальный дизайн и плавная анимация.</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <strong>4.8★</strong>
+                                <span>рейтинг в stores</span>
+                            </div>
+                            <div class="result-item">
+                                <strong>+150%</strong>
+                                <span>мобильные продажи</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">Подробнее о проекте →</a>
+                    </div>
+                </div>
+
+                <!-- Кейс 3 -->
+                <div class="case-item" data-category="web design">
+                    <div class="case-image">
+                        <div class="image-placeholder">[Изображение проекта 3]</div>
+                    </div>
+                    <div class="case-content">
+                        <div class="case-tags">
+                            <span class="case-tag">Веб-платформа</span>
+                            <span class="case-tag">UI/UX Дизайн</span>
+                            <span class="case-tag">Образование</span>
+                        </div>
+                        <h3>Онлайн-платформа для дистанционного обучения</h3>
+                        <p>Разработали образовательную экосистему с видео-уроками, интерактивными заданиями и системой прогресса. Поддержка 10,000+ одновременных пользователей.</p>
+                        <div class="case-results">
+                            <div class="result-item">
+                                <strong>10k+</strong>
+                                <span>активных пользователей</span>
+                            </div>
+                            <div class="result-item">
+                                <strong>95%</strong>
+                                <span>завершения курсов</span>
+                            </div>
+                        </div>
+                        <a href="#" class="case-link">Подробнее о проекте →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact" class="cta">
+            <div class="container">
+                <h2>Хотите такой же результат?</h2>
+                <p>Обсудите ваш проект с нашими экспертами</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Опишите вашу задачу" rows="4"></textarea>
+                    <button type="submit" class="btn">Обсудить проект</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">ЛОГОТИП</div>
+                    <p>Краткое описание компании. Создаем цифровые продукты.</p>
+                </div>
+                <div class="footer-contacts">
+                    <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    <a href="mailto:info@company.com">info@company.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

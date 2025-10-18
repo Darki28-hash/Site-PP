@@ -1,0 +1,161 @@
+# Главная страница
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название Компании - Услуги</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">ЛОГОТИП</a>
+            <nav class="nav">
+                <a href="services.html">Услуги</a>
+                <a href="cases.html">Кейсы</a>
+                <a href="about.html">О компании</a>
+            </nav>
+            <a href="#contact" class="btn">Обсудить проект</a>
+        </div>
+    </header>
+
+    <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+    <main>
+        <!-- Герой-блок для страницы Услуг -->
+        <section class="page-hero">
+            <div class="container">
+                <h1>Наши услуги</h1>
+                <p>Полный цикл разработки цифровых продуктов под ключ</p>
+            </div>
+        </section>
+
+        <!-- Детали услуг -->
+        <section class="services-detail">
+            <div class="container">
+                <!-- Услуга 1 -->
+                <div class="service-detail-card">
+                    <div class="service-detail-content">
+                        <h2>Разработка программного обеспечения</h2>
+                        <p>Создаем сложные бизнес-системы, корпоративные решения и масштабируемые приложения, которые решают конкретные бизнес-задачи.</p>
+                        <ul class="service-features">
+                            <li>Backend-разработка на современных стеках</li>
+                            <li>Архитектура высоконагруженных систем</li>
+                            <li>Интеграция со сторонними сервисами</li>
+                            <li>Технический аудит и консалтинг</li>
+                        </ul>
+                        <a href="#contact" class="btn">Обсудить проект</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <div class="image-placeholder">[Изображение: Разработка ПО]</div>
+                    </div>
+                </div>
+
+                <!-- Услуга 2 -->
+                <div class="service-detail-card reverse">
+                    <div class="service-detail-content">
+                        <h2>Веб-разработка</h2>
+                        <p>Создаем современные, быстрые и адаптивные веб-приложения, которые обеспечивают безупречный пользовательский опыт.</p>
+                        <ul class="service-features">
+                            <li>Frontend-разработка на React/Vue/Angular</li>
+                            <li>Прогрессивные веб-приложения (PWA)</li>
+                            <li>Интернет-магазины и E-commerce решения</li>
+                            <li>Корпоративные порталы и CRM-системы</li>
+                        </ul>
+                        <a href="#contact" class="btn">Обсудить проект</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <div class="image-placeholder">[Изображение: Веб-разработка]</div>
+                    </div>
+                </div>
+
+                <!-- Услуга 3 -->
+                <div class="service-detail-card">
+                    <div class="service-detail-content">
+                        <h2>UI/UX Дизайн</h2>
+                        <p>Проектируем интерфейсы, которые нравятся пользователям и решают бизнес-задачи через глубокое понимание потребностей аудитории.</p>
+                        <ul class="service-features">
+                            <li>Исследование пользовательского опыта</li>
+                            <li>Прототипирование и тестирование гипотез</li>
+                            <li>Создание дизайн-систем и гайдлайнов</li>
+                            <li>Анимация интерфейсов и микровзаимодействия</li>
+                        </ul>
+                        <a href="#contact" class="btn">Обсудить проект</a>
+                    </div>
+                    <div class="service-detail-image">
+                        <div class="image-placeholder">[Изображение: UI/UX Дизайн]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс работы -->
+        <section class="process">
+            <div class="container">
+                <h2>Как мы работаем</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Анализ и планирование</h3>
+                        <p>Погружаемся в бизнес-задачу, исследуем рынок и формируем техническое задание</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Дизайн и прототипирование</h3>
+                        <p>Создаем прототипы, проектируем пользовательский опыт и утверждаем визуальную концепцию</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Разработка и тестирование</h3>
+                        <p>Пишем код, проводим регулярные демонстрации и тестируем каждый функционал</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Запуск и поддержка</h3>
+                        <p>Разворачиваем проект, обучаем команду и обеспечиваем техническую поддержку</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact" class="cta">
+            <div class="container">
+                <h2>Готовы начать проект?</h2>
+                <p>Оставьте заявку, и мы свяжемся с вами в течение дня</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <select>
+                        <option value="" disabled selected>Выберите услугу</option>
+                        <option value="development">Разработка ПО</option>
+                        <option value="web">Веб-разработка</option>
+                        <option value="design">UI/UX Дизайн</option>
+                    </select>
+                    <textarea placeholder="Опишите вашу задачу" rows="4"></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">ЛОГОТИП</div>
+                    <p>Краткое описание компании. Создаем цифровые продукты.</p>
+                </div>
+                <div class="footer-contacts">
+                    <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                    <a href="mailto:info@company.com">info@company.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
